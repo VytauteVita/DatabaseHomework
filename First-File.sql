@@ -1,7 +1,7 @@
 CREATE DATABASE HW;
 
 
-
+-- ------------------------------------------------------------------------------------------
 
 --
 -- Database: `Books`
@@ -65,3 +65,5 @@ INSERT INTO `Authors` (`authorId`, `name`) VALUES
 INSERT INTO `Books` (`bookId`, `authorId`, `title`, `year`) VALUES
 (NULL, 12, 'Light and shadows', 2012),
 (NULL, 11, 'Notes and stories', 2016);
+
+SELECT * FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId` = `Books`.`authorId`;
