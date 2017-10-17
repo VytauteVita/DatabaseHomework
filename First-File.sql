@@ -78,5 +78,5 @@ SELECT COUNT(*), `name` FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId`
 
 DELETE FROM `Authors` WHERE authorId = 9 OR authorId = 11 OR authorId = 12 OR authorId = 13;
 
-
+DELETE FROM `Books` WHERE authorId IS NULL;
 
