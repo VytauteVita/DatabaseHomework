@@ -57,3 +57,7 @@ INSERT INTO `Books` (`bookId`, `authorId`, `title`, `year`) VALUES
 (7, NULL, 'Version Control with Git, 2nd Edition', 2012),
 (8, NULL, 'Learning Python, 4th Edition', 2009);
 
+INSERT INTO `Authors` (`authorId`, `name`) VALUES
+(NULL, 'Loly Will'),
+(NULL, 'Amber Inder'),
+(NULL, ' Phill Wheil');
