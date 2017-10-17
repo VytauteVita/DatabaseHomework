@@ -71,3 +71,7 @@ SELECT * FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId` = `Books`.`aut
 UPDATE `Books`
     SET `authorId` = 6
     WHERE `bookId` = 3;
+    
+SELECT COUNT(*), `name` FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId` = `Books`.`authorId` GROUP BY `Books`.`authorId`;
+    
+SELECT COUNT(*), `name` FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId` = `Books`.`authorId` WHERE `name` is not NULL GROUP BY `Books`.`authorId`;
