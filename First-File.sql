@@ -75,3 +75,8 @@ UPDATE `Books`
 SELECT COUNT(*), `name` FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId` = `Books`.`authorId` GROUP BY `Books`.`authorId`;
     
 SELECT COUNT(*), `name` FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId` = `Books`.`authorId` WHERE `name` is not NULL GROUP BY `Books`.`authorId`;
+
+DELETE FROM `Authors` WHERE authorId = 9 OR authorId = 11 OR authorId = 12 OR authorId = 13;
+
+
+
