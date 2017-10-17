@@ -67,3 +67,7 @@ INSERT INTO `Books` (`bookId`, `authorId`, `title`, `year`) VALUES
 (NULL, 11, 'Notes and stories', 2016);
 
 SELECT * FROM `Books` LEFT JOIN `Authors` ON `Authors`.`authorId` = `Books`.`authorId`;
+
+UPDATE `Books`
+    SET `authorId` = 6
+    WHERE `bookId` = 3;
