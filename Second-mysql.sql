@@ -31,3 +31,5 @@ ALTER TABLE `Books` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 INSERT INTO `Books` (`bookId`, `title`, `year`, `genreId`) VALUES
 (NULL,'Žirgai ir bėriai ristūnai', 2012, 2);
+
+-- $ mysqldump -u root -p HW > dumphw.sql
