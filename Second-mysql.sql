@@ -22,3 +22,7 @@ CREATE TABLE IF NOT EXISTS `Genres` (
 ALTER TABLE `Books` DROP COLUMN Genre;
 ALTER TABLE `Books` DROP COLUMN `authorId`;
 ALTER TABLE `Books` ADD `genreId` int;
+
+UPDATE `Books`
+    SET `genreId` = 1
+    WHERE `bookId` = 1 OR `bookId` = 2;
