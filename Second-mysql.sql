@@ -26,3 +26,8 @@ ALTER TABLE `Books` ADD `genreId` int;
 UPDATE `Books`
     SET `genreId` = 1
     WHERE `bookId` = 1 OR `bookId` = 2;
+
+ALTER TABLE `Books` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+INSERT INTO `Books` (`bookId`, `title`, `year`, `genreId`) VALUES
+(NULL,'Žirgai ir bėriai ristūnai', 2012, 2);
